@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{67ED296E-FF9D-4A76-8864-E53F3DE27A46}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Dooa.Droid</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <AssemblyName>Dooa.Droid</AssemblyName>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Cirrious.CrossCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e16445fd9b451819">
+      <HintPath>..\..\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\MonoAndroid\Cirrious.CrossCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.CrossCore.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\MonoAndroid\Cirrious.CrossCore.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e16445fd9b451819">
+      <HintPath>..\..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.5.1\lib\MonoAndroid\Cirrious.MvvmCross.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Binding, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Binding.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\MonoAndroid\Cirrious.MvvmCross.Binding.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.5.1\lib\MonoAndroid\Cirrious.MvvmCross.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Localization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\MonoAndroid\Cirrious.MvvmCross.Localization.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dooa\Dooa.csproj">
+      <Name>Dooa</Name>
+      <Project>{F7B3B2E0-3361-4C57-857E-522F453048AF}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DebugTrace.cs" />
+    <Compile Include="LinkerPleaseInclude.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setup.cs" />
+    <Compile Include="SplashScreen.cs" />
+    <Compile Include="Views\FirstView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\SplashScreen.axml" />
+    <AndroidResource Include="Resources\layout\FirstView.axml" />
+    <AndroidResource Include="Resources\drawable\backgr.png" />
+    <AndroidResource Include="Resources\drawable\backgr_org.png" />
+    <AndroidResource Include="Resources\drawable\backgr_submenu_doacao_bb.png" />
+    <AndroidResource Include="Resources\drawable\backgr_submenu_doacao_cc.png" />
+    <AndroidResource Include="Resources\drawable\backgr_submenu_doacao_pp.png" />
+    <AndroidResource Include="Resources\drawable\backgr_submenu_proj_01.png" />
+    <AndroidResource Include="Resources\drawable\backgr_submenu_proj_02.png" />
+    <AndroidResource Include="Resources\drawable\banner_info_01.png" />
+    <AndroidResource Include="Resources\drawable\banner_info_02.png" />
+    <AndroidResource Include="Resources\drawable\banner_org.png" />
+    <AndroidResource Include="Resources\drawable\banner_proj_doacao.png" />
+    <AndroidResource Include="Resources\drawable\br_1lugar.png" />
+    <AndroidResource Include="Resources\drawable\br_2lugar.png" />
+    <AndroidResource Include="Resources\drawable\br_3lugar.png" />
+    <AndroidResource Include="Resources\drawable\br_carreg_ranking.png" />
+    <AndroidResource Include="Resources\drawable\bt_apagar.png" />
+    <AndroidResource Include="Resources\drawable\bt_causa.png" />
+    <AndroidResource Include="Resources\drawable\bt_causa_artes.png" />
+    <AndroidResource Include="Resources\drawable\bt_causa_catastrofe.png" />
+    <AndroidResource Include="Resources\drawable\bt_causa_cultura.png" />
+    <AndroidResource Include="Resources\drawable\bt_causa_meio amb.png" />
+    <AndroidResource Include="Resources\drawable\bt_causa_saude.png" />
+    <AndroidResource Include="Resources\drawable\bt_comp.png" />
+    <AndroidResource Include="Resources\drawable\bt_info_off.png" />
+    <AndroidResource Include="Resources\drawable\bt_info_on.png" />
+    <AndroidResource Include="Resources\drawable\bt_mapa.png" />
+    <AndroidResource Include="Resources\drawable\bt_org.png" />
+    <AndroidResource Include="Resources\drawable\bt_proj.png" />
+    <AndroidResource Include="Resources\drawable\bt_usu.png" />
+    <AndroidResource Include="Resources\drawable\foto_usu_01.png" />
+    <AndroidResource Include="Resources\drawable\foto_usu_02.png" />
+    <AndroidResource Include="Resources\drawable\foto_usu_03.png" />
+    <AndroidResource Include="Resources\drawable\foto_usu_04.png" />
+    <AndroidResource Include="Resources\drawable\icon_busca.png" />
+    <AndroidResource Include="Resources\drawable\icon_favo_off.png" />
+    <AndroidResource Include="Resources\drawable\icon_favo_on.png" />
+    <AndroidResource Include="Resources\drawable\icon_ir_off.png" />
+    <AndroidResource Include="Resources\drawable\icon_ir_on.png" />
+    <AndroidResource Include="Resources\drawable\icon_loc.png" />
+    <AndroidResource Include="Resources\drawable\icon_loc_02.png" />
+    <AndroidResource Include="Resources\drawable\img_proj.png" />
+    <AndroidResource Include="Resources\drawable\logo_dooa_forms.png" />
+    <AndroidResource Include="Resources\drawable\logo_dooa_mono.png" />
+    <AndroidResource Include="Resources\drawable\logo_dooa_princ.png" />
+    <AndroidResource Include="Resources\drawable\logo_mds.png" />
+    <AndroidResource Include="Resources\drawable\logo_org_01.png" />
+    <AndroidResource Include="Resources\drawable\logo_org_02.png" />
+    <AndroidResource Include="Resources\drawable\logo_org_03.png" />
+    <AndroidResource Include="Resources\drawable\logo_org_04.png" />
+    <AndroidResource Include="Resources\drawable\logo_org_05.png" />
+    <AndroidResource Include="Resources\drawable\logo_org_06.png" />
+    <AndroidResource Include="Resources\drawable\logo_org_07.png" />
+    <AndroidResource Include="Resources\drawable\logo_org_08.png" />
+    <AndroidResource Include="Resources\drawable\logo_org_09.png" />
+    <AndroidResource Include="Resources\drawable\logo_org_10.png" />
+    <AndroidResource Include="Resources\layout\Register.axml" />
+    <AndroidResource Include="Resources\drawable\line_backgr.xml" />
+    <AndroidResource Include="Resources\layout\Login.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\SplashStyle.xml" />
+    <AndroidResource Include="Resources\values\MvxBindingAttributes.xml" />
+    <AndroidResource Include="Resources\drawable\splash.png" />
+    <Content Include="ToDo-MvvmCross\_ Droid UI.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <AndroidAsset Include="Assets\GOTHIC.TTF" />
+    <AndroidAsset Include="Assets\Myriad Web Pro Regular.ttf" />
+  </ItemGroup>
+</Project>
