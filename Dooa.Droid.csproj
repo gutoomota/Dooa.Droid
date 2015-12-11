@@ -148,6 +148,9 @@
     <AndroidResource Include="Resources\drawable\backgr_linkBtn.xml" />
     <AndroidResource Include="Resources\drawable\backgr_edittext.xml" />
     <AndroidResource Include="Resources\values\style.xml" />
+    <AndroidResource Include="Resources\layout\TitleBar.axml" />
+    <AndroidResource Include="Resources\drawable\btn_info.xml" />
+    <AndroidResource Include="Resources\layout\BottomBar.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />

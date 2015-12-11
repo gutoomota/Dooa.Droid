@@ -20,6 +20,7 @@
 	<string name="manterConectado">Manter conectado</string>
 	<string name="enviar">Enviar</string>
 	<string name="reenviarSenha">Reenviar Senha</string>
+	<string name="voltar">Voltar</string>
 	<string name="reenviarSenhaInfo">Digite o endereço de e-mail que você usou para se inscrever e nós lhe enviaremos um link para redefinir sua senha.</string>
 
 </resources>
