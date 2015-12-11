@@ -26,78 +26,46 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal" />
                 <TextView
-                    android:text="@string/cadastroUpper"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="35sp"
-                    android:layout_marginTop="20dp"
-                    android:textColor="#0F69B2"
-                    android:layout_gravity="center_horizontal" />
+                    android:text="@string/cadastro"
+                    style="@style/title" />
                 <ImageView
-                    android:background="@drawable/line_backgr"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="20dp"
-                    android:layout_height="2dp"
-                    android:layout_centerHorizontal="true" />
+                    style="@style/lineBig" />
                 <EditText
                     android:id="@+id/etNome"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/nome"
-                    android:textSize="20sp"
-                    android:textColor="@android:color/darker_gray" />
+                    style="@style/edittext"
+                    android:text="@string/nome" />
                 <EditText
                     android:id="@+id/etEmail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/email"
-                    android:textSize="20sp"
-                    android:textColor="@android:color/darker_gray" />
+                    style="@style/edittext"
+                    android:text="@string/email" />
                 <EditText
                     android:id="@+id/etEmail2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/email2"
-                    android:textSize="20sp"
-                    android:textColor="@android:color/darker_gray" />
+                    style="@style/edittext"
+                    android:text="@string/email2" />
                 <EditText
                     android:id="@+id/etSenha"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/senha"
-                    android:textSize="20sp"
-                    android:textColor="@android:color/darker_gray" />
+                    style="@style/edittext"
+                    android:text="@string/senha" />
                 <EditText
                     android:id="@+id/etSenha2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/senha2"
-                    android:textSize="20sp"
-                    android:textColor="@android:color/darker_gray" />
+                    style="@style/edittext"
+                    android:text="@string/senha2" />
                 <RadioButton
                     android:id="@+id/rbNews"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
                     android:textColor="@android:color/black"
                     android:textSize="20sp"
                     android:text="@string/news"
                     android:layout_gravity="center_horizontal" />
                 <Button
                     android:id="@+id/btCadastrar"
-                    android:text="@string/cadastrarUpper"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:padding="5dp"
-                    android:textColor="@android:color/white"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#152754" />
+                    android:text="@string/cadastrar"
+                    android:textAllCaps="true"
+                    android:background="#152754"
+                    style="@style/button" />
                 <TextView
                     android:text="@string/userTerms"
                     android:layout_width="wrap_content"
@@ -116,12 +84,8 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp">
                     <ImageView
-                        android:id="@+id/im1"
-                        android:background="@drawable/line_backgr"
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:layout_toLeftOf="@id/tvOu"
-                        android:layout_centerVertical="true" />
+                        style="@style/line"
+                        android:layout_toLeftOf="@id/tvOu" />
                     <TextView
                         android:id="@+id/tvOu"
                         android:text="@string/ou"
@@ -133,25 +97,14 @@
                         android:textSize="20sp"
                         android:textColor="@android:color/black" />
                     <ImageView
-                        android:id="@+id/im2"
-                        android:background="@drawable/line_backgr"
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:layout_toRightOf="@id/tvOu"
-                        android:layout_centerVertical="true" />
+                        style="@style/line"
+                        android:layout_toRightOf="@id/tvOu" />
                 </RelativeLayout>
                 <Button
                     android:id="@+id/btFacebook"
                     android:text="@string/facebookLogIn"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:padding="5dp"
-                    android:textColor="@android:color/white"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    style="@style/button"
                     android:background="#0F69B2" />
                 <TextView
                     android:text="@string/pessoaFisica"
@@ -164,14 +117,7 @@
                     android:textColor="@android:color/black"
                     android:layout_gravity="center_horizontal" />
                 <ImageView
-                    android:background="@drawable/line_backgr"
-                    android:layout_marginLeft="70dp"
-                    android:layout_marginRight="70dp"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:layout_height="2dp"
-                    android:layout_centerHorizontal="true" />
+                    style="@style/lineMean" />
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">

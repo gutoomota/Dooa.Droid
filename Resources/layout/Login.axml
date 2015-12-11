@@ -26,36 +26,18 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal" />
                 <TextView
-                    android:text="@string/entrarUpper"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="35sp"
-                    android:layout_marginTop="20dp"
-                    android:textColor="#0F69B2"
-                    android:layout_gravity="center_horizontal" />
+                    android:text="@string/entrar"
+                    style="@style/title" />
                 <ImageView
-                    android:background="@drawable/line_backgr"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="20dp"
-                    android:layout_height="2dp"
-                    android:layout_centerHorizontal="true" />
+                    style="@style/lineBig" />
                 <EditText
                     android:id="@+id/etNome"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/nome"
-                    android:textSize="20sp"
-                    android:textColor="@android:color/darker_gray" />
+                    style="@style/edittext"
+                    android:text="@string/nome" />
                 <EditText
                     android:id="@+id/etSenha"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/senha"
-                    android:textSize="20sp"
-                    android:textColor="@android:color/darker_gray" />
+                    style="@style/edittext"
+                    android:text="@string/senha" />
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -85,17 +67,9 @@
                 <Button
                     android:id="@+id/btLogin"
                     android:text="@string/login"
+                    android:background="#00A859"
                     android:textAllCaps="true"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:padding="5dp"
-                    android:textColor="@android:color/white"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#00A859" />
+                    style="@style/button" />
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -104,12 +78,8 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp">
                     <ImageView
-                        android:id="@+id/im1"
-                        android:background="@drawable/line_backgr"
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:layout_toLeftOf="@id/tvOu"
-                        android:layout_centerVertical="true" />
+                        style="@style/line"
+                        android:layout_toLeftOf="@id/tvOu" />
                     <TextView
                         android:id="@+id/tvOu"
                         android:text="@string/ou"
@@ -121,25 +91,14 @@
                         android:textSize="20sp"
                         android:textColor="@android:color/black" />
                     <ImageView
-                        android:id="@+id/im2"
-                        android:background="@drawable/line_backgr"
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:layout_toRightOf="@id/tvOu"
-                        android:layout_centerVertical="true" />
+                        style="@style/line"
+                        android:layout_toRightOf="@id/tvOu" />
                 </RelativeLayout>
                 <Button
                     android:id="@+id/btFacebook"
                     android:text="@string/facebookLogIn"
-                    android:textSize="20sp"
-                    android:padding="5dp"
-                    android:textColor="@android:color/white"
-                    android:textStyle="bold"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    style="@style/button"
                     android:background="#0F69B2" />
                 <TextView
                     android:text="@string/pessoaFisica"
@@ -152,14 +111,7 @@
                     android:textColor="@android:color/black"
                     android:layout_gravity="center_horizontal" />
                 <ImageView
-                    android:background="@drawable/line_backgr"
-                    android:layout_marginLeft="70dp"
-                    android:layout_marginRight="70dp"
-                    android:layout_width="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:layout_height="2dp"
-                    android:layout_centerHorizontal="true" />
+                    style="@style/lineMean" />
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -176,7 +128,7 @@
                             android:textColor="@android:color/black" />
                         <TextView
                             android:id="@+id/btLogin"
-                            android:text="@string/cadastrarLow"
+                            android:text="@string/cadastrar"
                             android:textStyle="bold"
                             android:textColor="#0F69B2"
                             android:layout_width="wrap_content"

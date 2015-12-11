@@ -144,6 +144,10 @@
     <AndroidResource Include="Resources\layout\Register.axml" />
     <AndroidResource Include="Resources\drawable\line_backgr.xml" />
     <AndroidResource Include="Resources\layout\Login.axml" />
+    <AndroidResource Include="Resources\layout\ReenviarSenha.axml" />
+    <AndroidResource Include="Resources\drawable\backgr_linkBtn.xml" />
+    <AndroidResource Include="Resources\drawable\backgr_edittext.xml" />
+    <AndroidResource Include="Resources\values\style.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
