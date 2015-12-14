@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="70dp"
-    android:background="#95B3D7"
+    android:background="#5283BB"
     android:orientation="horizontal">
     <Button
         android:layout_width="wrap_content"
@@ -12,11 +12,13 @@
         android:textAllCaps="false"
         android:textColor="#F7FAFC"
         android:textSize="20sp"
-        android:background="#95B3D7"
+        android:padding="10dp"
+        android:drawablePadding="10sp"
+        android:drawableLeft="@drawable/bt_voltar"
+        android:background="#5283BB"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true" />
+        android:layout_alignParentLeft="true" />
     <ImageView
         android:layout_width="87dp"
         android:layout_height="51dp"

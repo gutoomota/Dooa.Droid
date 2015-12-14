@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item 
+  		android:state_selected="true">
+  		<layer-list>
+		   <item>
+			    <shape>
+			      <solid
+			         android:color="#5283BB" />
+		          <padding
+			         android:left="15dp"
+			         android:top="15dp"
+			         android:right="15dp"
+			         android:bottom="15dp" />
+			    </shape>
+  			</item>
+  			<item 
+		   		android:drawable="@drawable/bt_mapa" />
+  		</layer-list>
+  	</item>
+	<item 
+  		android:state_selected="false">
+  		<layer-list>
+		   <item>
+			    <shape>
+			      <solid
+			          android:color="#152754" />
+		          <padding
+			         android:left="15dp"
+			         android:top="15dp"
+			         android:right="15dp"
+			         android:bottom="15dp" />
+			    </shape>
+  			</item>
+  			<item 
+		   		android:drawable="@drawable/bt_mapa" />
+  		</layer-list>
+  	</item>
+</selector>

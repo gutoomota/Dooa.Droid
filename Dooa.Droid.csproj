@@ -151,6 +151,14 @@
     <AndroidResource Include="Resources\layout\TitleBar.axml" />
     <AndroidResource Include="Resources\drawable\btn_info.xml" />
     <AndroidResource Include="Resources\layout\BottomBar.axml" />
+    <AndroidResource Include="Resources\drawable\btn_mapa.xml" />
+    <AndroidResource Include="Resources\drawable\btn_org.xml" />
+    <AndroidResource Include="Resources\drawable\btn_causa.xml" />
+    <AndroidResource Include="Resources\drawable\btn_proj.xml" />
+    <AndroidResource Include="Resources\drawable\btn_usu.xml" />
+    <AndroidResource Include="Resources\layout\Mapa.axml" />
+    <AndroidResource Include="Resources\drawable\bt_voltar.png" />
+    <AndroidResource Include="Resources\layout\Organizacoes.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
