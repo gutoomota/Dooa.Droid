@@ -10,16 +10,16 @@
         android:layout_alignParentTop="true"
         android:background="#5283BB" />
     <RelativeLayout
+        android:id="@+id/rlBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#152754" />
+    <RelativeLayout
         android:id="@+id/rlMapa"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/rlTitleBar"
         android:layout_above="@id/rlBottomBar"
-        android:background="#152754" />
-    <RelativeLayout
-        android:id="@+id/rlBottomBar"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_alignParentBottom="true"
-        android:background="#5283BB" />
+        android:background="#F7FAFC" />
 </RelativeLayout>

@@ -14,7 +14,7 @@
 	<string name="facebookLogIn">Login pelo Facebook</string>
 	<string name="pessoaFisica">*Somente pessoas físicas.</string>
 	<string name="jaCadastrado">Já sou cadastrado:</string>
-	<string name="logIn">Log in</string>
+	<string name="login">Log in</string>
 	<string name="entrar">Entrar</string>
 	<string name="esqueceuSenha">Esqueceu a senha?</string>
 	<string name="manterConectado">Manter conectado</string>
@@ -22,5 +22,10 @@
 	<string name="reenviarSenha">Reenviar Senha</string>
 	<string name="voltar">Voltar</string>
 	<string name="reenviarSenhaInfo">Digite o endereço de e-mail que você usou para se inscrever e nós lhe enviaremos um link para redefinir sua senha.</string>
+	<string name="buscar">Buscar</string>
+	<string name="causasInfo">5 causas. Milhares de projetos incríveis, levando sua ajuda para quem realmente necessita.</string>
+	<string name="doar">Doar</string>
+	<string name="projeto">O Projeto</string>
+	<string name="comentarios">Comentários</string>
 
 </resources>

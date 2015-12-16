@@ -77,9 +77,6 @@
                     android:layout_marginRight="30dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp">
-                    <ImageView
-                        style="@style/line"
-                        android:layout_toLeftOf="@id/tvOu" />
                     <TextView
                         android:id="@+id/tvOu"
                         android:text="@string/ou"
@@ -90,6 +87,9 @@
                         android:paddingRight="10dp"
                         android:textSize="20sp"
                         android:textColor="@android:color/black" />
+                    <ImageView
+                        style="@style/line"
+                        android:layout_toLeftOf="@id/tvOu" />
                     <ImageView
                         style="@style/line"
                         android:layout_toRightOf="@id/tvOu" />

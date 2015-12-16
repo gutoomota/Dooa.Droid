@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:background="#152754">
     <RelativeLayout
-        android:id="@+id/llMapa"
+        android:id="@+id/rlMapa"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:layout_alignParentLeft="true">
@@ -16,20 +16,7 @@
             android:background="@drawable/btn_mapa" />
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/llOrg"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_toRightOf="@id/llMapa"
-        android:layout_toLeftOf="@id/llCausa">
-        <Button
-            android:id="@+id/btOrg"
-            android:layout_width="77dp"
-            android:layout_height="71dp"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/btn_org" />
-    </RelativeLayout>
-    <RelativeLayout
-        android:id="@+id/llCausa"
+        android:id="@+id/rlCausa"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:layout_centerHorizontal="true">
@@ -41,20 +28,7 @@
             android:background="@drawable/btn_causa" />
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/llProj"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_toRightOf="@id/llCausa"
-        android:layout_toLeftOf="@id/llUsu">
-        <Button
-            android:id="@+id/btProj"
-            android:layout_width="77dp"
-            android:layout_height="71dp"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/btn_proj" />
-    </RelativeLayout>
-    <RelativeLayout
-        android:id="@+id/llUsu"
+        android:id="@+id/rlUsu"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:layout_alignParentRight="true">
@@ -64,5 +38,31 @@
             android:layout_height="71dp"
             android:layout_centerHorizontal="true"
             android:background="@drawable/btn_usu" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlOrg"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/rlMapa"
+        android:layout_toLeftOf="@id/rlCausa">
+        <Button
+            android:id="@+id/btOrg"
+            android:layout_width="77dp"
+            android:layout_height="71dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_org" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlProj"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/rlCausa"
+        android:layout_toLeftOf="@id/rlUsu">
+        <Button
+            android:id="@+id/btProj"
+            android:layout_width="77dp"
+            android:layout_height="71dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_proj" />
     </RelativeLayout>
 </RelativeLayout>

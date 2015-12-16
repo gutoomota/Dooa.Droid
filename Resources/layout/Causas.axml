@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:id="@+id/rlTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="#5283BB" />
+    <RelativeLayout
+        android:id="@+id/rlBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#152754" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlTitleBar"
+        android:layout_above="@id/rlBottomBar"
+        android:background="#F7FAFC"
+        android:fadeScrollbars="false"
+        android:verticalScrollbarPosition="left">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvCausasInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/causasInfo"
+                android:gravity="center"
+                android:textColor="#96989A"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/ivLine"
+                style="@style/line"
+                android:layout_below="@id/tvCausasInfo" />
+            <ImageView
+                android:id="@+id/ivCatastrofes"
+                android:layout_below="@id/ivLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bt_causa_catastrofe" />
+            <ImageView
+                android:id="@+id/ivCenter"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/ivCatastrofes" />
+            <ImageView
+                android:id="@+id/ivSaude"
+                android:layout_below="@id/ivCatastrofes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/ivCenter"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bt_causa_saude" />
+            <ImageView
+                android:id="@+id/ivMeioAmbiente"
+                android:layout_below="@id/ivCatastrofes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/ivCenter"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bt_causa_meioAmb" />
+            <ImageView
+                android:id="@+id/ivCultura"
+                android:layout_below="@id/ivSaude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/ivCenter"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bt_causa_cultura" />
+            <ImageView
+                android:id="@+id/ivArtes"
+                android:layout_below="@id/ivSaude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/ivCenter"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bt_causa_artes" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

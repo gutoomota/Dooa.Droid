@@ -72,6 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
                     android:layout_marginRight="40dp"
+                    android:gravity="center"
                     android:textSize="15sp"
                     android:layout_marginTop="10dp"
                     android:textColor="@android:color/black"
@@ -134,7 +135,7 @@
                             android:textColor="@android:color/black" />
                         <TextView
                             android:id="@+id/btLogin"
-                            android:text="@string/logIn"
+                            android:text="@string/login"
                             android:textStyle="bold"
                             android:textColor="#0F69B2"
                             android:layout_width="wrap_content"

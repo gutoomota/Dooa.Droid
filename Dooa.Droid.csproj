@@ -106,7 +106,6 @@
     <AndroidResource Include="Resources\drawable\bt_causa_artes.png" />
     <AndroidResource Include="Resources\drawable\bt_causa_catastrofe.png" />
     <AndroidResource Include="Resources\drawable\bt_causa_cultura.png" />
-    <AndroidResource Include="Resources\drawable\bt_causa_meio amb.png" />
     <AndroidResource Include="Resources\drawable\bt_causa_saude.png" />
     <AndroidResource Include="Resources\drawable\bt_comp.png" />
     <AndroidResource Include="Resources\drawable\bt_info_off.png" />
@@ -145,7 +144,6 @@
     <AndroidResource Include="Resources\drawable\line_backgr.xml" />
     <AndroidResource Include="Resources\layout\Login.axml" />
     <AndroidResource Include="Resources\layout\ReenviarSenha.axml" />
-    <AndroidResource Include="Resources\drawable\backgr_linkBtn.xml" />
     <AndroidResource Include="Resources\drawable\backgr_edittext.xml" />
     <AndroidResource Include="Resources\values\style.xml" />
     <AndroidResource Include="Resources\layout\TitleBar.axml" />
@@ -159,6 +157,10 @@
     <AndroidResource Include="Resources\layout\Mapa.axml" />
     <AndroidResource Include="Resources\drawable\bt_voltar.png" />
     <AndroidResource Include="Resources\layout\Organizacoes.axml" />
+    <AndroidResource Include="Resources\layout\SearchBar.axml" />
+    <AndroidResource Include="Resources\layout\Causas.axml" />
+    <AndroidResource Include="Resources\drawable\bt_causa_meioAmb.png" />
+    <AndroidResource Include="Resources\layout\Projeto.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />

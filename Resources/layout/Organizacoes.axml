@@ -14,7 +14,13 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_below="@id/rlTitleBar"
-        android:background="#00A859" />
+        android:background="#D9DADC" />
+    <RelativeLayout
+        android:id="@+id/rlBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#152754" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -35,8 +41,8 @@
                 android:orientation="horizontal">
                 <ImageView
                     android:id="@+id/btOrg00"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"
+                    android:layout_width="109dp"
+                    android:layout_height="98dp"
                     android:layout_margin="5dp"
                     android:src="@drawable/logo_org_01" />
                 <ImageView
@@ -108,10 +114,4 @@
             </GridLayout>
         </RelativeLayout>
     </ScrollView>
-    <RelativeLayout
-        android:id="@+id/rlBottomBar"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_alignParentBottom="true"
-        android:background="#5283BB" />
 </RelativeLayout>
