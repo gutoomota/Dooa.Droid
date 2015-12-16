@@ -173,24 +173,28 @@
             android:background="#F7FAFC" />
         <HorizontalScrollView
             android:id="@+id/hsvProjectInfo"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:foregroundGravity="center"
+            android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true">
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:minWidth="25px"
+                android:minHeight="25px">
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:id="@+id/linearLayout8">
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_marginRight="10dp"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:id="@+id/linearLayout1">
                         <TextView
                             android:id="@+id/tvCompartilhamentos"
                             android:layout_width="wrap_content"
@@ -207,14 +211,16 @@
                             android:textColor="#96989A"
                             android:textStyle="bold"
                             android:textAllCaps="true"
-                            android:text="@string/compartilhamentos" />
+                            android:text="@string/compartilhamentos"
+                            android:id="@+id/textView1" />
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_marginRight="10dp"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:id="@+id/linearLayout2">
                         <TextView
                             android:id="@+id/tvDoacoes"
                             android:layout_width="wrap_content"
@@ -231,14 +237,16 @@
                             android:textColor="#96989A"
                             android:textStyle="bold"
                             android:textAllCaps="true"
-                            android:text="@string/doacoes" />
+                            android:text="@string/doacoes"
+                            android:id="@+id/textView2" />
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_marginRight="10dp"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:id="@+id/linearLayout3">
                         <TextView
                             android:id="@+id/tvValidadeDoacoes"
                             android:layout_width="wrap_content"
@@ -255,14 +263,16 @@
                             android:textColor="#96989A"
                             android:textStyle="bold"
                             android:textAllCaps="true"
-                            android:text="@string/fimDoacoes" />
+                            android:text="@string/fimDoacoes"
+                            android:id="@+id/textView3" />
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:layout_marginRight="10dp"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:id="@+id/linearLayout4">
                         <TextView
                             android:id="@+id/tvArrecadado"
                             android:layout_width="wrap_content"
@@ -279,13 +289,15 @@
                             android:textColor="#96989A"
                             android:textStyle="bold"
                             android:textAllCaps="true"
-                            android:text="@string/arrecadado" />
+                            android:text="@string/arrecadado"
+                            android:id="@+id/textView4" />
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:id="@+id/linearLayout7">
                         <TextView
                             android:id="@+id/tvMeta2"
                             android:layout_width="wrap_content"
@@ -302,7 +314,8 @@
                             android:textColor="#96989A"
                             android:textStyle="bold"
                             android:textAllCaps="true"
-                            android:text="@string/meta" />
+                            android:text="@string/meta"
+                            android:id="@+id/textView6" />
                     </LinearLayout>
                 </LinearLayout>
             </RelativeLayout>
@@ -318,11 +331,16 @@
             android:id="@+id/btProject"
             android:layout_width="wrap_content"
             android:layout_height="71dp"
+            android:background="#F7FAFC"
+			android:drawablePadding="10dp"
+            android:drawableBottom="@drawable/line_backgr_blue"
             android:text="@string/projeto" />
         <Button
             android:id="@+id/btComent"
             android:layout_width="wrap_content"
             android:layout_height="71dp"
+            bac
+            style="@style/line_bot_blue"
             android:text="@string/projeto" />
     </LinearLayout>
     <RelativeLayout

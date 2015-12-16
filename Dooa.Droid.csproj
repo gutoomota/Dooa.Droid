@@ -139,7 +139,6 @@
     <AndroidResource Include="Resources\drawable\logo_org_09.png" />
     <AndroidResource Include="Resources\drawable\logo_org_10.png" />
     <AndroidResource Include="Resources\layout\Register.axml" />
-    <AndroidResource Include="Resources\drawable\line_backgr.xml" />
     <AndroidResource Include="Resources\layout\Login.axml" />
     <AndroidResource Include="Resources\layout\ReenviarSenha.axml" />
     <AndroidResource Include="Resources\drawable\backgr_edittext.xml" />
@@ -164,6 +163,9 @@
     <AndroidResource Include="Resources\drawable\icon_loc_on.png" />
     <AndroidResource Include="Resources\drawable\icon_location.xml" />
     <AndroidResource Include="Resources\drawable\icon_favorite.xml" />
+    <AndroidResource Include="Resources\drawable\btn_Menu.xml" />
+    <AndroidResource Include="Resources\drawable\line_backgr_gray.xml" />
+    <AndroidResource Include="Resources\drawable\line_backgr_blue.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
