@@ -13,25 +13,137 @@
         android:id="@+id/rlProfile"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_below="@id/rlTitleBar"
         android:layout_above="@id/llMenu"
-        android:background="#D9DADC">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
+        android:background="#ECEDEE">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_toLeftOf="@id/ivCenter"
-            android:src="@drawable/img_proj" />
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@id/llDoar">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_proj"
+                android:layout_centerHorizontal="true" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_favorite"
+                android:layout_margin="10dp"
+                android:layout_alignRight="true" />
+        </RelativeLayout>
         <ImageView
             android:id="@+id/ivCenter"
             android:layout_width="10dp"
             android:layout_height="match_parent"
+            android:layout_above="@id/llDoar"
             android:layout_centerHorizontal="true" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/ivCenter"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:layout_above="@id/llDoar">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvProjectName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#606062"
+                    android:gravity="center_vertical"
+                    android:textAllCaps="true"
+                    android:text="@string/combateFome"
+                    android:drawableRight="@drawable/icon_status" />
+                <TextView
+                    android:id="@+id/tvCompany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#0F69B2"
+                    android:textAllCaps="true"
+                    android:text="@string/combateFome" />
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    style="@style/line" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#0F69B2"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:text="@string/localizacao" />
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="#96989A"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:text="ASSUNÇÃO, PIAUÍ - BRASIL (TESTE)"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/icon_location" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#0F69B2"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:text="@string/validade" />
+                <TextView
+                    android:id="@+id/tvValidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="#606062"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:text="30/12/2015 a 30/12/2016 (TESTE)" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#0F69B2"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:text="@string/meta" />
+                <TextView
+                    android:id="@+id/tvMeta1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="#606062"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:text="R$10.000.000,00 (TESTE)" />
+            </LinearLayout>
+        </ScrollView>
         <LinearLayout
             android:id="@+id/llDoar"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="90dp"
+            android:gravity="center"
+            android:layout_above="@id/pbDonations"
             android:orientation="horizontal">
             <Button
                 android:id="@+id/btCompartilhar"
@@ -45,10 +157,156 @@
                 android:text="@string/doar"
                 android:textColor="#F7FAFC"
                 android:background="#C41C2D"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/button2" />
         </LinearLayout>
+        <ProgressBar
+            android:id="@+id/pbDonations"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_above="@id/hsvProjectInfo"
+            android:layout_margin="10dp"
+            android:indeterminate="false"
+            android:progress="30"
+            android:background="#F7FAFC" />
+        <HorizontalScrollView
+            android:id="@+id/hsvProjectInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center"
+            android:layout_alignParentBottom="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvCompartilhamentos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:textColor="#606062"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="20k (TESTE)" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="7sp"
+                            android:textColor="#96989A"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="@string/compartilhamentos" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvDoacoes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:textColor="#606062"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="12k (TESTE)" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="7sp"
+                            android:textColor="#96989A"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="@string/doacoes" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvValidadeDoacoes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:textColor="#606062"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="40 dias (TESTE)" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="7sp"
+                            android:textColor="#96989A"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="@string/fimDoacoes" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvArrecadado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:textColor="#606062"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="R$ 3kk (TESTE)" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="7sp"
+                            android:textColor="#96989A"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="@string/arrecadado" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvMeta2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:textColor="#606062"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="R$ 10kk (TESTE)" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="7sp"
+                            android:textColor="#96989A"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:text="@string/meta" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </HorizontalScrollView>
     </RelativeLayout>
     <LinearLayout
         android:id="@+id/llMenu"

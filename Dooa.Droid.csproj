@@ -123,8 +123,6 @@
     <AndroidResource Include="Resources\drawable\icon_favo_on.png" />
     <AndroidResource Include="Resources\drawable\icon_ir_off.png" />
     <AndroidResource Include="Resources\drawable\icon_ir_on.png" />
-    <AndroidResource Include="Resources\drawable\icon_loc.png" />
-    <AndroidResource Include="Resources\drawable\icon_loc_02.png" />
     <AndroidResource Include="Resources\drawable\img_proj.png" />
     <AndroidResource Include="Resources\drawable\logo_dooa_forms.png" />
     <AndroidResource Include="Resources\drawable\logo_dooa_mono.png" />
@@ -161,6 +159,11 @@
     <AndroidResource Include="Resources\layout\Causas.axml" />
     <AndroidResource Include="Resources\drawable\bt_causa_meioAmb.png" />
     <AndroidResource Include="Resources\layout\Projeto.axml" />
+    <AndroidResource Include="Resources\drawable\icon_status.xml" />
+    <AndroidResource Include="Resources\drawable\icon_loc_off.png" />
+    <AndroidResource Include="Resources\drawable\icon_loc_on.png" />
+    <AndroidResource Include="Resources\drawable\icon_location.xml" />
+    <AndroidResource Include="Resources\drawable\icon_favorite.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />

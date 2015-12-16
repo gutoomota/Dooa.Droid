@@ -27,5 +27,14 @@
 	<string name="doar">Doar</string>
 	<string name="projeto">O Projeto</string>
 	<string name="comentarios">Comentários</string>
+	<string name="combateFome">Combate a Fome</string>
+	<string name="localizacao">Localização:</string>
+	<string name="validade">Validade:</string>
+	<string name="meta">Meta:</string>
+	<string name="compartilhamentos">Compartilhamentos</string>
+	<string name="doacoes">Doações</string>
+	<string name="fimDoacoes">para o fim das doações</string>
+	<string name="arrecadado">arrecadado</string>
+
 
 </resources>
