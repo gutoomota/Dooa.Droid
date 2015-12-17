@@ -24,6 +24,7 @@
             android:layout_alignParentLeft="true"
             android:layout_above="@id/llDoar">
             <ImageView
+                android:id="@+id/ivProjectImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
@@ -34,7 +35,8 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/icon_favorite"
                 android:layout_margin="10dp"
-                android:layout_alignRight="true" />
+                android:layout_alignRight="@id/ivProjectImage"
+                android:layout_alignTop="@id/ivProjectImage" />
         </RelativeLayout>
         <ImageView
             android:id="@+id/ivCenter"
@@ -62,7 +64,7 @@
                     android:textColor="#606062"
                     android:gravity="center_vertical"
                     android:textAllCaps="true"
-                    android:text="@string/combateFome"
+                    android:text="COMBATE A FOME (TESTE)"
                     android:drawableRight="@drawable/icon_status" />
                 <TextView
                     android:id="@+id/tvCompany"
@@ -71,7 +73,7 @@
                     android:textSize="15sp"
                     android:textColor="#0F69B2"
                     android:textAllCaps="true"
-                    android:text="@string/combateFome" />
+                    android:text="CRUZ VERMELHA (TESTE)" />
                 <ImageView
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
@@ -326,23 +328,95 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:background="#F7FAFC">
+        android:background="@drawable/backgr_gray_stroke">
         <Button
             android:id="@+id/btProject"
-            android:layout_width="wrap_content"
-            android:layout_height="71dp"
-            android:background="#F7FAFC"
-			android:drawablePadding="10dp"
-            android:drawableBottom="@drawable/line_backgr_blue"
+            style="@style/line_bot_blue"
             android:text="@string/projeto" />
         <Button
             android:id="@+id/btComent"
-            android:layout_width="wrap_content"
-            android:layout_height="71dp"
-            bac
             style="@style/line_bot_blue"
-            android:text="@string/projeto" />
+            android:text="@string/comentarios" />
     </LinearLayout>
+    <ScrollView
+        android:id="@+id/svProjectDescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llMenu"
+        android:layout_above="@id/rlBottomBar"
+        android:visibility="gone"
+        android:background="#F7FAFC">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#0F69B2"
+                android:layout_centerHorizontal="true"
+                android:text="@string/missao"
+                style="@style/title"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tvProjectDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:textSize="10sp"
+                android:textColor="#606062"
+                android:layout_below="@id/tvTitle"
+                android:text="@string/testeBIG" />
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/rlProjectComment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llMenu"
+        android:layout_above="@id/rlBottomBar"
+        android:visibility="visible"
+        android:background="#95B3D7"
+        android:padding="20dp">
+        <EditText
+            android:id="@+id/etComment"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:background="@drawable/backgr_edittext"
+            android:paddingRight="70dp"
+            android:textSize="15sp"
+            android:textColorHint="#96989A"
+            android:hint="@string/commentHint"
+            android:textColor="#606062" />
+        <Button
+            android:id="@+id/btComment"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/etComment"
+            android:layout_alignTop="@id/etComment"
+            android:layout_alignBottom="@id/etComment"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:text="@string/enviar"
+            android:textColor="#F7FAFC"
+            android:background="#5283BB" />
+        <ScrollView
+            android:id="@+id/svProjectComment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/etComment">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/etComment" />
+        </ScrollView>
+    </RelativeLayout>
     <RelativeLayout
         android:id="@+id/rlBottomBar"
         android:layout_width="match_parent"

@@ -32,7 +32,7 @@
 	</style>
 
 	<style name="lineBig">
-		<item name="android:background">@drawable/line_backgr_gray</item>
+		<item name="android:background">@drawable/line_backgr_gray_hor</item>
 		<item name="android:layout_marginLeft">20dp</item>
 		<item name="android:layout_marginRight">20dp</item>
 		<item name="android:layout_width">match_parent</item>
@@ -43,7 +43,7 @@
 	</style>
 
 	<style name="lineMean">
-		<item name="android:background">@drawable/line_backgr_gray</item>
+		<item name="android:background">@drawable/line_backgr_gray_hor</item>
 		<item name="android:layout_marginLeft">70dp</item>
 		<item name="android:layout_marginRight">70dp</item>
 		<item name="android:layout_width">match_parent</item>
@@ -54,14 +54,33 @@
 	</style>
 
 	<style name="line">
-		<item name="android:background">@drawable/line_backgr_gray</item>
+		<item name="android:background">@drawable/line_backgr_gray_hor</item>
 		<item name="android:layout_width">match_parent</item>
 		<item name="android:layout_height">2dp</item>
+		<item name="android:layout_centerInParent">true</item>
 	</style>
 
 	<style name="line_bot_blue">
-		<item name="android:background">@drawable/line_backgr_blue</item>
-		<item name="android:textColor">#0F69B2</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginLeft">10dp</item>
+		<item name="android:background">@drawable/btn_Menu_backgr</item>
+		<item name="android:textColor">@drawable/btn_Menu_textColor</item>
+		<item name="android:textSize">15sp</item>
+	</style>
+
+	<style name="lineBig_vert">
+		<item name="android:background">@drawable/line_backgr_gray_hor</item>
+		<item name="android:layout_marginLeft">10dp</item>
+		<item name="android:layout_marginRight">10dp</item>
+		<item name="android:layout_width">2dp</item>
+		<item name="android:layout_marginTop">20dp</item>
+		<item name="android:layout_marginBottom">20dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_alignParentBottom">true</item>
+		<item name="android:layout_alignParentTop">true</item>
+
 	</style>
 
 </resources>

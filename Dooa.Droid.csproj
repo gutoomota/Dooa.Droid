@@ -88,11 +88,6 @@
     <AndroidResource Include="Resources\layout\FirstView.axml" />
     <AndroidResource Include="Resources\drawable\backgr.png" />
     <AndroidResource Include="Resources\drawable\backgr_org.png" />
-    <AndroidResource Include="Resources\drawable\backgr_submenu_doacao_bb.png" />
-    <AndroidResource Include="Resources\drawable\backgr_submenu_doacao_cc.png" />
-    <AndroidResource Include="Resources\drawable\backgr_submenu_doacao_pp.png" />
-    <AndroidResource Include="Resources\drawable\backgr_submenu_proj_01.png" />
-    <AndroidResource Include="Resources\drawable\backgr_submenu_proj_02.png" />
     <AndroidResource Include="Resources\drawable\banner_info_01.png" />
     <AndroidResource Include="Resources\drawable\banner_info_02.png" />
     <AndroidResource Include="Resources\drawable\banner_org.png" />
@@ -163,9 +158,14 @@
     <AndroidResource Include="Resources\drawable\icon_loc_on.png" />
     <AndroidResource Include="Resources\drawable\icon_location.xml" />
     <AndroidResource Include="Resources\drawable\icon_favorite.xml" />
-    <AndroidResource Include="Resources\drawable\btn_Menu.xml" />
-    <AndroidResource Include="Resources\drawable\line_backgr_gray.xml" />
-    <AndroidResource Include="Resources\drawable\line_backgr_blue.xml" />
+    <AndroidResource Include="Resources\drawable\btn_Menu_textColor.xml" />
+    <AndroidResource Include="Resources\drawable\btn_Menu_backgr.xml" />
+    <AndroidResource Include="Resources\drawable\backgr_gray_stroke.xml" />
+    <AndroidResource Include="Resources\layout\Comment.axml" />
+    <AndroidResource Include="Resources\drawable\backgr_User_Image.xml" />
+    <AndroidResource Include="Resources\drawable\mascara_foto_com.png" />
+    <AndroidResource Include="Resources\drawable\line_backgr_gray_hor.xml" />
+    <AndroidResource Include="Resources\drawable\line_backgr_grat_vert.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
