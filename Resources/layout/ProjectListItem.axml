@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#D7DADC">
+    <ImageView
+        android:id="@+id/ivProjectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_proj" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_favorite"
+        android:layout_margin="10dp"
+        android:layout_alignRight="@id/ivProjectImage"
+        android:layout_alignTop="@id/ivProjectImage" />
+    <LinearLayout
+        android:id="@+id/llProject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivProjectImage"
+        android:layout_margin="10dp"
+        android:layout_alignLeft="@id/ivProjectImage"
+        android:layout_alignRight="@id/ivProjectImage"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvProjectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:textAllCaps="true"
+            android:text="COMBATE A FOME (TESTE)"
+            android:drawableRight="@drawable/icon_status" />
+        <TextView
+            android:id="@+id/tvCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#0F69B2"
+            android:textAllCaps="true"
+            android:text="CRUZ VERMELHA (TESTE)" />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/pbDonations"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/llProject"
+        android:layout_alignLeft="@id/llProject"
+        android:layout_alignRight="@id/llProject"
+        android:indeterminate="false"
+        android:progress="30"
+        android:background="#F7FAFC" />
+</RelativeLayout>

@@ -164,8 +164,11 @@
     <AndroidResource Include="Resources\layout\Comment.axml" />
     <AndroidResource Include="Resources\drawable\backgr_User_Image.xml" />
     <AndroidResource Include="Resources\drawable\mascara_foto_com.png" />
-    <AndroidResource Include="Resources\drawable\line_backgr_gray_hor.xml" />
-    <AndroidResource Include="Resources\drawable\line_backgr_grat_vert.xml" />
+    <AndroidResource Include="Resources\drawable\line_backgr_gray.xml" />
+    <AndroidResource Include="Resources\drawable\line2.xml" />
+    <AndroidResource Include="Resources\layout\ProjectList.axml" />
+    <AndroidResource Include="Resources\layout\ProjectListItem.axml" />
+    <AndroidResource Include="Resources\layout\Doacoes.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />

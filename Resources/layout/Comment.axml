@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlComment"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#F7FAFC"
@@ -8,18 +9,42 @@
         android:id="@+id/ivUserImage"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:src="@drawable/foto_usu_01"
+        android:layout_margin="10dp"
+        android:src="@drawable/mascara_foto_com"
+        android:background="@drawable/foto_usu_01"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true" />
     <ImageView
-        android:layout_width="wrap_content"
+        android:id="@+id/ivLine"
+        android:background="@drawable/line_backgr_gray"
         android:layout_height="wrap_content"
-        android:src="@drawable/mascara_foto_com"
-        android:layout_alignTop="@id/ivUserImage"
-        android:layout_alignBottom="@id/ivUserImage"
-        android:layout_alignLeft="@id/ivUserImage"
-        android:layout_alignRight="@id/ivUserImage" />
-    <ImageView
-        style="@style/lineBig_vert"
-        android:layout_toRightOf="@id/ivUserImage" />
+        android:layout_width="2dp"
+        android:layout_alignTop="@id/llComment"
+        android:layout_alignBottom="@id/llComment"
+        android:layout_toRightOf="@id/ivUserImage"
+        android:layout_marginRight="10dp" />
+    <LinearLayout
+        android:id="@+id/llComment"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/ivUserImage"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alberto Soares (TESTE)"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#0F59B2" />
+        <TextView
+            android:id="@+id/tvUserComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="#606062"
+            android:text="@string/testeMid" />
+    </LinearLayout>
 </RelativeLayout>
