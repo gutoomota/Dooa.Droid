@@ -9,52 +9,291 @@
         android:layout_height="70dp"
         android:layout_alignParentTop="true"
         android:background="#5283BB" />
-    <LinearLayout
-        android:layout_width="fill_parent"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/rlTitleBar"
         android:layout_above="@id/rlBottomBar"
-        android:background="#F7FAFC"
-        android:orientation="vertical">
-    <!-- PEDIR IMAGEM DO BANNER SEM LEGENDA A ANDERSON -->
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/banner_proj_doacao"
-            android:scaleType="centerCrop" />
+        android:background="#F7FAFC">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:background="#ECEDEE">
-            <TextView
-                android:id="@+id/tvLocation"
-                android:layout_width="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/banner_doacao"
+                    android:scaleType="centerCrop" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBottom="@id/ivBanner"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="#990F69B2">
+                    <TextView
+                        android:id="@+id/tvCausa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#F7FAFC"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textAllCaps="true"
+                        android:text="@string/combateFome" />
+                    <TextView
+                        android:id="@+id/tvOrg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignBottom="@id/ivBanner"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#F7FAFC"
+                        android:text="CRUZ VERMELHA (TESTE)" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:textColor="#96989A"
-                android:textStyle="bold"
-                android:padding="5dp"
+                android:gravity="center"
+                android:background="#ECEDEE">
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#96989A"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:text="ASSUNÇÃO, PIAUÍ - BRASIL (TESTE)"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/icon_location" />
+            <!--LinearLayout inserido para posocionamento do "drawableLeft" correta-->
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#F7FAFC"
+                android:background="#0769B2"
+                android:padding="10dp"
                 android:textAllCaps="false"
                 android:gravity="center"
-                android:text="ASSUNÇÃO, PIAUÍ - BRASIL (TESTE)"
-                android:drawablePadding="5dp"
-                android:drawableLeft="@drawable/icon_location" />
+                android:text="@string/fraseDoacao" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ECEDEE"
+                android:padding="5dp">
+                <LinearLayout
+                    android:id="@+id/llCpf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="90dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#606062"
+                        android:textAllCaps="false"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold"
+                        android:text="@string/cpfDoador" />
+                    <EditText
+                        android:id="@+id/etCpf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/backgr_edittext"
+                        android:textSize="15sp"
+                        android:textColor="#96989A" />
+                </LinearLayout>
+                <TextView
+                    android:text="@string/cpfInfo"
+                    android:layout_below="@id/llCpf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#606062"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical"
+                    android:layout_margin="20dp">
+                    <Button
+                        android:id="@+id/bt30"
+                        style="@style/btn_donation_value"
+                        android:text="@string/doar30"
+                        android:layout_marginBottom="20dp" />
+                    <Button
+                        android:id="@+id/bt60"
+                        style="@style/btn_donation_value"
+                        android:text="@string/doar60" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical"
+                    android:layout_margin="20dp">
+                    <Button
+                        android:id="@+id/bt40"
+                        style="@style/btn_donation_value"
+                        android:text="@string/doar40"
+                        android:layout_marginBottom="20dp" />
+                    <Button
+                        android:id="@+id/bt90"
+                        style="@style/btn_donation_value"
+                        android:text="@string/doar90" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical"
+                    android:layout_margin="20dp">
+                    <Button
+                        android:id="@+id/bt50"
+                        style="@style/btn_donation_value"
+                        android:text="@string/doar50"
+                        android:layout_marginBottom="20dp" />
+                    <Button
+                        android:id="@+id/bt120"
+                        style="@style/btn_donation_value"
+                        android:text="@string/doar120" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#606062"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="bold"
+                    android:text="@string/outroValor" />
+                <EditText
+                    android:id="@+id/etValor"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backgr_edittext"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:hint="@string/doar30"
+                    android:textColorHint="#96989A"
+                    android:textColor="#96989A" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#606062"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="bold"
+                    android:text="@string/repetirCada" />
+                <Spinner
+                    android:id="@+id/spRepeatDonation"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/spinner_title" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/backgr_gray_stroke">
+                <Button
+                    android:id="@+id/btCCredito"
+                    style="@style/line_bot_blue"
+                    android:text="@string/ccredito" />
+                <Button
+                    android:id="@+id/btBoleto"
+                    style="@style/line_bot_blue"
+                    android:text="@string/boleto" />
+                <Button
+                    android:id="@+id/btPayPal"
+                    style="@style/line_bot_blue"
+                    android:text="@string/paypal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <RadioButton
+                    android:id="@+id/rbPrivacyPolicies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:textSize="15sp"
+                    android:button="@drawable/rbtn_menu"
+                    android:textColor="#606062"
+                    android:text="@string/privacyPolicies" />
+                <RadioButton
+                    android:id="@+id/rbPrivacyPolicies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:textSize="15sp"
+                    android:button="@drawable/rbtn_menu"
+                    android:textColor="#606062"
+                    android:text="@string/donationSharing" />
+                <RadioButton
+                    android:id="@+id/rbPrivacyPolicies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:padding="7dp"
+                    android:textSize="15sp"
+                    android:button="@drawable/rbtn_menu"
+                    android:textColor="#606062"
+                    android:text="@string/anonimousdonation" />
+                <Button
+                    android:id="@+id/btCCDoar"
+                    style="@style/btn_doar"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp" />
+            </LinearLayout>
         </LinearLayout>
-        <TextView
-            android:id="@+id/tvLocation"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:textColor="#F7FAFC"
-            android:background="#0769B2"
-            android:padding="10dp"
-            android:textAllCaps="false"
-            android:gravity="center"
-            android:text="@string/fraseDoacao" />
-    </LinearLayout>
+    </ScrollView>
     <RelativeLayout
         android:id="@+id/rlBottomBar"
         android:layout_width="match_parent"

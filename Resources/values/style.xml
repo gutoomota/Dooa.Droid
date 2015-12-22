@@ -69,4 +69,51 @@
 		<item name="android:textSize">15sp</item>
 	</style>
 
+	<style name="btn_donation_value">
+		<item name="android:layout_width">90dp</item>
+		<item name="android:layout_height">40dp</item>
+		<item name="android:background">@drawable/btn_donation</item>
+		<item name="android:textColor">@drawable/btn_menu_textcolor</item>
+	</style>
+
+	<style name="btn_doar">
+		<item name="android:textSize">14sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:text">@string/doar</item>
+		<item name="android:textColor">#F7FAFC</item>
+		<item name="android:padding">5dp</item>
+		<item name="android:background">@drawable/btn_doar</item>
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+
+	<style name="expbtn_org">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">20dp</item>
+		<item name="android:layout_marginLeft">20dp</item>
+		<item name="android:layout_marginRight">20dp</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:textAllCaps">true</item>
+		<item name="android:textColor">#95B3D7</item>
+		<item name="android:background">@drawable/expbtn_backgr</item>
+		<item name="android:drawableRight">@drawable/icon_expBtn</item>
+	</style>
+
+	<style name="tv_org">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginRight">15dp</item>
+		<item name="android:layout_marginLeft">15dp</item>
+		<item name="android:layout_marginTop">10dp</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textColor">#606062</item>
+		<item name="android:text">@string/testeBIG</item>
+	</style>
+
+	<style name="">
+		<item name=""></item>
+	</style>
+
 </resources>

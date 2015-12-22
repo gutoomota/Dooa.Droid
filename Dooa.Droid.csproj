@@ -91,7 +91,6 @@
     <AndroidResource Include="Resources\drawable\banner_info_01.png" />
     <AndroidResource Include="Resources\drawable\banner_info_02.png" />
     <AndroidResource Include="Resources\drawable\banner_org.png" />
-    <AndroidResource Include="Resources\drawable\banner_proj_doacao.png" />
     <AndroidResource Include="Resources\drawable\br_1lugar.png" />
     <AndroidResource Include="Resources\drawable\br_2lugar.png" />
     <AndroidResource Include="Resources\drawable\br_3lugar.png" />
@@ -169,6 +168,17 @@
     <AndroidResource Include="Resources\layout\ProjectList.axml" />
     <AndroidResource Include="Resources\layout\ProjectListItem.axml" />
     <AndroidResource Include="Resources\layout\Doacoes.axml" />
+    <AndroidResource Include="Resources\drawable\banner_doacao.png" />
+    <AndroidResource Include="Resources\drawable\btn_donation.xml" />
+    <AndroidResource Include="Resources\drawable\radio_bt_ativado.png" />
+    <AndroidResource Include="Resources\drawable\radio_bt_desativado.png" />
+    <AndroidResource Include="Resources\drawable\rbtn_menu.xml" />
+    <AndroidResource Include="Resources\drawable\btn_doar.xml" />
+    <AndroidResource Include="Resources\layout\Organizacao.axml" />
+    <AndroidResource Include="Resources\drawable\expBtn_backgr.xml" />
+    <AndroidResource Include="Resources\drawable\icon_expBtn.xml" />
+    <AndroidResource Include="Resources\drawable\dropdown_ativo.png" />
+    <AndroidResource Include="Resources\drawable\dropdown_desativado.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />

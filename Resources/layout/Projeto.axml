@@ -11,7 +11,7 @@
         android:background="#5283BB" />
     <RelativeLayout
         android:id="@+id/rlProfile"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/rlTitleBar"
         android:layout_above="@id/llMenu"
@@ -154,14 +154,8 @@
                 android:layout_marginRight="15dp"
                 android:background="@drawable/bt_comp" />
             <Button
-                android:textSize="20sp"
-                android:padding="5dp"
-                android:text="@string/doar"
-                android:textColor="#F7FAFC"
-                android:background="#C41C2D"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/button2" />
+                android:id="@+id/button2"
+                style="@style/btn_doar" />
         </LinearLayout>
         <ProgressBar
             android:id="@+id/pbDonations"
@@ -344,7 +338,7 @@
         android:layout_height="match_parent"
         android:layout_below="@id/llMenu"
         android:layout_above="@id/rlBottomBar"
-        android:visibility="gone"
+        android:visibility="visible"
         android:background="#F7FAFC">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -378,7 +372,7 @@
         android:layout_height="match_parent"
         android:layout_below="@id/llMenu"
         android:layout_above="@id/rlBottomBar"
-        android:visibility="visible"
+        android:visibility="gone"
         android:background="#95B3D7"
         android:padding="20dp">
         <EditText
