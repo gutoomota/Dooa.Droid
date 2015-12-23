@@ -137,9 +137,7 @@
     <AndroidResource Include="Resources\layout\ReenviarSenha.axml" />
     <AndroidResource Include="Resources\drawable\backgr_edittext.xml" />
     <AndroidResource Include="Resources\values\style.xml" />
-    <AndroidResource Include="Resources\layout\TitleBar.axml" />
     <AndroidResource Include="Resources\drawable\btn_info.xml" />
-    <AndroidResource Include="Resources\layout\BottomBar.axml" />
     <AndroidResource Include="Resources\drawable\btn_mapa.xml" />
     <AndroidResource Include="Resources\drawable\btn_org.xml" />
     <AndroidResource Include="Resources\drawable\btn_causa.xml" />
@@ -148,7 +146,6 @@
     <AndroidResource Include="Resources\layout\Mapa.axml" />
     <AndroidResource Include="Resources\drawable\bt_voltar.png" />
     <AndroidResource Include="Resources\layout\Organizacoes.axml" />
-    <AndroidResource Include="Resources\layout\SearchBar.axml" />
     <AndroidResource Include="Resources\layout\Causas.axml" />
     <AndroidResource Include="Resources\drawable\bt_causa_meioAmb.png" />
     <AndroidResource Include="Resources\layout\Projeto.axml" />
@@ -179,6 +176,20 @@
     <AndroidResource Include="Resources\drawable\icon_expBtn.xml" />
     <AndroidResource Include="Resources\drawable\dropdown_ativo.png" />
     <AndroidResource Include="Resources\drawable\dropdown_desativado.png" />
+    <AndroidResource Include="Resources\drawable\bt_ir.png" />
+    <AndroidResource Include="Resources\drawable\btn_projectList.xml" />
+    <AndroidResource Include="Resources\layout\Bar_Bottom.axml" />
+    <AndroidResource Include="Resources\layout\Bar_Profile.axml" />
+    <AndroidResource Include="Resources\layout\Bar_Search.axml" />
+    <AndroidResource Include="Resources\layout\Bar_Title.axml" />
+    <AndroidResource Include="Resources\layout\Perfil.axml" />
+    <AndroidResource Include="Resources\drawable\pb_ranking.xml" />
+    <None Include="Documentation\33-0.png" />
+    <None Include="Documentation\curso.Azuris.txt" />
+    <None Include="Documentation\escala de cores.png" />
+    <None Include="Documentation\Hex-Color-Chart-A1.jpg" />
+    <None Include="Documentation\Hex_OpacityValues.txt" />
+    <AndroidResource Include="Resources\drawable\estrela_bar.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />

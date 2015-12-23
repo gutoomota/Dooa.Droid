@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="#D9DADC">
+    <RelativeLayout
+        android:id="@+id/rlPerfil"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true">
+        <Button
+            android:id="@+id/btPerfil"
+            android:layout_width="77dp"
+            android:layout_height="71dp"
+            android:layout_centerHorizontal="true"
+            android:background="#FFD9DADC"
+            android:textAllCaps="false"
+            android:textColor="@drawable/btn_menu_textcolor"
+            android:text="@string/perfil" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlMensagens"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/btMensagens"
+            android:layout_width="77dp"
+            android:layout_height="71dp"
+            android:layout_centerHorizontal="true"
+            android:background="#FFD9DADC"
+            android:textAllCaps="false"
+            android:textColor="@drawable/btn_menu_textcolor"
+            android:text="@string/mensagens" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlRecibos"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true">
+        <Button
+            android:id="@+id/btRecibos"
+            android:layout_width="77dp"
+            android:layout_height="71dp"
+            android:layout_centerHorizontal="true"
+            android:background="#FFD9DADC"
+            android:textAllCaps="false"
+            android:textColor="@drawable/btn_menu_textcolor"
+            android:text="@string/recibos" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlContatos"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/rlPerfil"
+        android:layout_toLeftOf="@id/rlMensagens">
+        <Button
+            android:id="@+id/btContatos"
+            android:layout_width="77dp"
+            android:layout_height="71dp"
+            android:layout_centerHorizontal="true"
+            android:background="#FFD9DADC"
+            android:textAllCaps="false"
+            android:textColor="@drawable/btn_menu_textcolor"
+            android:text="@string/contatos" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlDoacoes"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/rlMensagens"
+        android:layout_toLeftOf="@id/rlRecibos">
+        <Button
+            android:id="@+id/btDoacoes"
+            android:layout_width="77dp"
+            android:layout_height="71dp"
+            android:layout_centerHorizontal="true"
+            android:background="#FFD9DADC"
+            android:textAllCaps="false"
+            android:textColor="@drawable/btn_menu_textcolor"
+            android:text="@string/doacoes" />
+    </RelativeLayout>
+</RelativeLayout>
