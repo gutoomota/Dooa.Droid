@@ -20,7 +20,7 @@
         android:layout_height="match_parent"
         android:layout_below="@id/rlProfileBar"
         android:layout_above="@id/rlBottomBar"
-        android:background="#F7FAFC">
+        android:background="#FFFFFF">
         <RelativeLayout
             android:id="@+id/rlImage"
             android:layout_width="wrap_content"
@@ -140,7 +140,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="15sp"
-                        android:textColor="#606062"
+                        android:textColor="#96989A"
                         android:textAllCaps="false"
                         android:text="@string/doacoes2" />
                     <TextView
@@ -157,7 +157,7 @@
                 <LinearLayout
                     android:id="@+id/llProfileFrase"
                     android:layout_width="match_parent"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
@@ -206,6 +206,483 @@
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>
+        <HorizontalScrollView
+            android:layout_width="600dp"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/ivLine"
+            android:fadeScrollbars="false">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/llProfileFrase"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_margin="20dp"
+                        android:textColor="#152754"
+                        android:textAllCaps="false"
+                        android:text="@string/rankDoacoes" />
+                    <RelativeLayout
+                        android:layout_width="600dp"
+                        android:layout_height="match_parent">
+                    <!--PRIMEIRO LUGAR-->
+                        <RelativeLayout
+                            android:id="@+id/rlPos1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true">
+                            <ImageView
+                                android:id="@+id/ivUserImage1"
+                                android:layout_width="105dp"
+                                android:layout_margin="2dp"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/foto_usu_01"
+                                android:layout_alignBottom="@id/ivRankbar1"
+                                android:layout_alignRight="@id/ivRankbar1"
+                                android:layout_alignTop="@id/ivRankbar1" />
+                            <ImageView
+                                android:id="@+id/ivRankbar1"
+                                android:layout_width="380dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/ranking_pos1"
+                                android:layout_alignParentLeft="true" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pos1"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:textColor="#96989A"
+                                android:layout_alignLeft="@id/ivRankbar1"
+                                android:layout_alignTop="@id/ivRankbar1"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="50dp" />
+                            <LinearLayout
+                                android:id="@+id/llRank1"
+                                android:layout_toRightOf="@id/ivRankbar1"
+                                android:layout_alignTop="id/ivRankbar1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:id="@+id/tvUserName1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textStyle="bold"
+                                        android:textSize="15sp"
+                                        android:textColor="#333333"
+                                        android:gravity="center_vertical"
+                                        android:textAllCaps="true"
+                                        android:text="Pedro Marques (TESTE)" />
+                                    <ProgressBar
+                                        android:id="@+id/pbDonations1"
+                                        style="@android:style/Widget.ProgressBar.Horizontal"
+                                        android:progressDrawable="@drawable/pb_ranking"
+                                        android:layout_width="120dp"
+                                        android:layout_below="@id/tvUserName1"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_height="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:indeterminate="false"
+                                        android:progress="80" />
+                                <!--166x29-->
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/estrela_bar"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_alignLeft="@id/pbDonations1"
+                                        android:layout_alignBottom="@id/pbDonations1"
+                                        android:layout_alignRight="@id/pbDonations1"
+                                        android:layout_alignTop="@id/pbDonations1" />
+                                    <LinearLayout
+                                        android:layout_below="@id/pbDonations1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="15sp"
+                                            android:textColor="#96989A"
+                                            android:textAllCaps="false"
+                                            android:text="@string/doacoes2" />
+                                        <TextView
+                                            android:id="@+id/ivNumeroDoacoes1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold"
+                                            android:textColor="#606062"
+                                            android:textAllCaps="false"
+                                            android:text="40 (TESTE)" />
+                                    </LinearLayout>
+                                </RelativeLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/ivNumeroProjetos1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:textColor="#606062"
+                                        android:textAllCaps="false"
+                                        android:text="10 (TESTE)" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15sp"
+                                        android:textColor="#96989A"
+                                        android:textAllCaps="false"
+                                        android:text="@string/projetosAjudados" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/ivNumeroPessoas1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:textColor="#606062"
+                                        android:textAllCaps="false"
+                                        android:text="30.000 (TESTE)" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15sp"
+                                        android:textColor="#96989A"
+                                        android:textAllCaps="false"
+                                        android:text="@string/pessoasSalvas" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    <!--SEGUNDO LUGAR-->
+                        <RelativeLayout
+                            android:id="@+id/rlPos2"
+                            android:layout_below="@id/rlPos1"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/ivUserImage2"
+                                android:layout_width="95dp"
+                                android:layout_margin="2dp"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/foto_usu_02"
+                                android:layout_alignBottom="@id/ivRankbar2"
+                                android:layout_alignRight="@id/ivRankbar2"
+                                android:layout_alignTop="@id/ivRankbar2" />
+                            <ImageView
+                                android:id="@+id/ivRankbar2"
+                                android:layout_width="285dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/ranking_pos2"
+                                android:layout_alignParentLeft="true" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pos2"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:textColor="#96989A"
+                                android:layout_alignLeft="@id/ivRankbar2"
+                                android:layout_alignTop="@id/ivRankbar2"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="50dp" />
+                            <LinearLayout
+                                android:id="@+id/llRank2"
+                                android:layout_toRightOf="@id/ivRankbar2"
+                                android:layout_alignTop="id/ivRankbar2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:id="@+id/tvUserName2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textStyle="bold"
+                                        android:textSize="15sp"
+                                        android:textColor="#333333"
+                                        android:gravity="center_vertical"
+                                        android:textAllCaps="true"
+                                        android:text="Daniele Souza (TESTE)" />
+                                    <ProgressBar
+                                        android:id="@+id/pbDonations2"
+                                        style="@android:style/Widget.ProgressBar.Horizontal"
+                                        android:progressDrawable="@drawable/pb_ranking"
+                                        android:layout_width="120dp"
+                                        android:layout_below="@id/tvUserName2"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_height="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:indeterminate="false"
+                                        android:progress="50" />
+                                <!--166x29-->
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/estrela_bar"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_alignLeft="@id/pbDonations2"
+                                        android:layout_alignBottom="@id/pbDonations2"
+                                        android:layout_alignRight="@id/pbDonations2"
+                                        android:layout_alignTop="@id/pbDonations2" />
+                                    <LinearLayout
+                                        android:layout_below="@id/pbDonations2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="15sp"
+                                            android:textColor="#96989A"
+                                            android:textAllCaps="false"
+                                            android:text="@string/doacoes2" />
+                                        <TextView
+                                            android:id="@+id/ivNumeroDoacoes2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold"
+                                            android:textColor="#606062"
+                                            android:textAllCaps="false"
+                                            android:text="35 (TESTE)" />
+                                    </LinearLayout>
+                                </RelativeLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/ivNumeroProjetos2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:textColor="#606062"
+                                        android:textAllCaps="false"
+                                        android:text="5 (TESTE)" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15sp"
+                                        android:textColor="#96989A"
+                                        android:textAllCaps="false"
+                                        android:text="@string/projetosAjudados" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/ivNumeroPessoas2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:textColor="#606062"
+                                        android:textAllCaps="false"
+                                        android:text="20.000 (TESTE)" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15sp"
+                                        android:textColor="#96989A"
+                                        android:textAllCaps="false"
+                                        android:text="@string/pessoasSalvas" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    <!--TERCEIRO LUGAR-->
+                        <RelativeLayout
+                            android:id="@+id/rlPos3"
+                            android:layout_below="@id/rlPos2"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/ivUserImage3"
+                                android:layout_width="90dp"
+                                android:layout_margin="2dp"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/foto_usu_04"
+                                android:layout_alignBottom="@id/ivRankbar3"
+                                android:layout_alignRight="@id/ivRankbar3"
+                                android:layout_alignTop="@id/ivRankbar3" />
+                            <ImageView
+                                android:id="@+id/ivRankbar3"
+                                android:layout_width="200dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/ranking_pos3"
+                                android:layout_alignParentLeft="true" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pos3"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:textColor="#96989A"
+                                android:layout_alignLeft="@id/ivRankbar3"
+                                android:layout_alignTop="@id/ivRankbar3"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="50dp" />
+                            <LinearLayout
+                                android:id="@+id/llRank3"
+                                android:layout_toRightOf="@id/ivRankbar3"
+                                android:layout_alignTop="id/ivRankbar3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:id="@+id/tvUserName3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textStyle="bold"
+                                        android:textSize="15sp"
+                                        android:textColor="#333333"
+                                        android:gravity="center_vertical"
+                                        android:textAllCaps="true"
+                                        android:text="Daniele Souza (TESTE)" />
+                                    <ProgressBar
+                                        android:id="@+id/pbDonations3"
+                                        style="@android:style/Widget.ProgressBar.Horizontal"
+                                        android:progressDrawable="@drawable/pb_ranking"
+                                        android:layout_width="120dp"
+                                        android:layout_below="@id/tvUserName3"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_height="20dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:indeterminate="false"
+                                        android:progress="50" />
+                                <!--166x29-->
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/estrela_bar"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_alignLeft="@id/pbDonations3"
+                                        android:layout_alignBottom="@id/pbDonations3"
+                                        android:layout_alignRight="@id/pbDonations3"
+                                        android:layout_alignTop="@id/pbDonations3" />
+                                    <LinearLayout
+                                        android:layout_below="@id/pbDonations3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="15sp"
+                                            android:textColor="#96989A"
+                                            android:textAllCaps="false"
+                                            android:text="@string/doacoes2" />
+                                        <TextView
+                                            android:id="@+id/ivNumeroDoacoes3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold"
+                                            android:textColor="#606062"
+                                            android:textAllCaps="false"
+                                            android:text="35 (TESTE)" />
+                                    </LinearLayout>
+                                </RelativeLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/ivNumeroProjetos3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:textColor="#606062"
+                                        android:textAllCaps="false"
+                                        android:text="5 (TESTE)" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15sp"
+                                        android:textColor="#96989A"
+                                        android:textAllCaps="false"
+                                        android:text="@string/projetosAjudados" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/ivNumeroPessoas3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:textColor="#606062"
+                                        android:textAllCaps="false"
+                                        android:text="20.000 (TESTE)" />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="15sp"
+                                        android:textColor="#96989A"
+                                        android:textAllCaps="false"
+                                        android:text="@string/pessoasSalvas" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <ImageView
+                        style="@style/lineMean" />
+                </LinearLayout>
+            </ScrollView>
+        </HorizontalScrollView>
     </RelativeLayout>
     <RelativeLayout
         android:id="@+id/rlBottomBar"

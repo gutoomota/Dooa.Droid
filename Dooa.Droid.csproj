@@ -190,6 +190,9 @@
     <None Include="Documentation\Hex-Color-Chart-A1.jpg" />
     <None Include="Documentation\Hex_OpacityValues.txt" />
     <AndroidResource Include="Resources\drawable\estrela_bar.png" />
+    <AndroidResource Include="Resources\drawable\ranking_pos1.png" />
+    <AndroidResource Include="Resources\drawable\ranking_pos2.png" />
+    <AndroidResource Include="Resources\drawable\ranking_pos3.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
